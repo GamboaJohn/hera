@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+:root{
+    --text-color:#ffffff;
+    --main-color:rgb(160, 35, 133);
+    --second-color: #000;
+}
+header{
+    background-color:transparent;
+    display: flex;
+    padding: 20px 8%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    
+}
+.navbar a{
+    margin-left: 35px;
+    text-align: right;
+    color: pink;
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+} 
+.navbar a:hover {
+    color: palevioletred;
+}
+
+.logo {
+    width: 7%;
+    position: fixed;
+    top: -3%;
+    right: 0px;
+    z-index: 1000;
+    left:7%;
+  }
+
+#Main{
+    background-image: url('hera\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    padding: 0 10%;
+}
+
+
+#MainBody{
+    max-width: 600px;
+}
+#MainBody h1{ 
+    font-size: 55px;
+    font-weight:700;
+}
+#MainBody h3{ 
+    font-size: 30px;
+    font-weight:700;
+}
+#socials{
+    position: absolute;
+    bottom: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    left: 60%;
+   
+}
+#socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    border: 4px solid rgb(230, 215, 230);
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(230, 215, 230);
+    background: transparent;
+    position: relative;
+}
+#socials a:hover {
+    color: rgb(160, 35, 133);
+}
+.body-imgHover {
+    position:absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent ;
+    transition: 3s;
+
+}
+
+.body-imgHover:hover {
+    background:rgb(102, 39, 49);
+    opacity: .8;
+}
+
+#Main2{
+    background-image: url('wallpaperdef.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    
+}
+
+#borderpic{
+    border-radius: 50%;
+    border: 4px solid #fff; 
+    max-width: 500px; 
+    max-height: 500px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    position: relative;
+    order: 2;
+    margin-left: 20px;
+}
+
+#AboutMe {
+    flex: 1; 
+    order: 1;
+    margin-right: 20px;
+}
+
+#AboutMe h1{ 
+    font-size: 55px;
+    font-weight:700;
+}
+#ann{
+    color:rgb(168, 118, 214);
+}
+.color{
+    color:rgb(168, 118, 214);
+}
+#journey{
+    color:rgb(221, 6, 250);
+}
+#AboutMe p{ 
+    font-size: 30px;
+    margin: 20px 0 40px;
+}
+#AboutMe {
+    margin-left: 50px; 
+}
+#borderpic{
+    border-radius: 50%;
+    border: 4px solid #fff; 
+    max-width: 500px; 
+    max-height: 500px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+#AboutMe .btnbox {
+    height: 50px;
+    width: 345px;
+    
+}
+.btnbox {
+    position: relative;
+    display: inline-block;
+}
+
+.btnbox a {
+    width: 150px;
+    height: 100%;
+    background-color: rgb(123, 76, 134);
+    border-radius: 8px;
+    
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans";
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+.btnbox a:hover{
+  color:rgb(221, 143, 231);
+  background-color: white;
+}
+#Main2 h1,
+#Main2 p,
+#Main2 a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .education {
+    background-image: url('wallpaperdef.jpg');
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.education h2{
+    margin-bottom: 5rem;
+    color: var(--text-color);
+    font-size: 55px;
+}
+
+.education h3{
+    margin-bottom: 5rem;
+    font-size: 30px;
+    color:rgb(228, 143, 240);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.education-box {
+    background-color: var(--main-color);
+    height: 530px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.education-box:hover {
+    background: var(--second-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.education-box .education-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.education-info h4 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.education-info p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.education-info i {
+    font-size: 3rem;
+}
+
+.btnEduc {
+    position: relative;
+    display: inline-block;
+}
+
+.btnEduc a {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(123, 76, 134);
+    border-radius: 8px;
+    
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans";
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+.btnEduc a:hover{
+  color:rgb(221, 143, 231);
+  background-color: white;
+}
+
+.btnHob {
+    position: relative;
+    display: inline-block;
+}
+
+.btnHob a {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(123, 76, 134);
+    border-radius: 8px;
+    
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans";
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+.btnHob a:hover{
+  color:rgb(221, 143, 231);
+  background-color: white;
+}
+#btnmargin{
+    padding-bottom: 98px;
+}
+
+
+.sectionskills{
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5em;
+    margin-left: 1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:40vh;
+    background-image: url('wallpaperdef.jpg');
+  }
+  
+  #SkillsExperience{
+    padding-top: 30px;
+  }
+  
+  .containers
+  { 
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position:relative;
+  width: 200px;
+  display:flex;
+  justify-content:space-around;
+  padding: 1px;
+  }
+  
+  .containers .card
+  {
+  position:relative;
+  width:250px;
+  background-image: url('wallpaperdef.jpg');
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  border-radius:4px;
+  text-align:center;
+  overflow:hidden;
+  transition:0.5s;
+  }
+  .containers .card:hover
+  {
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+  }
+  .containers .card:before
+  {
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.03);
+  pointer-events:none;
+  z-index:1;
+  }
+  .percent
+  {
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  box-shadow: inset 0 0 50px #fdfdfd;
+  background-image: url('wallpaperdef.jpg');
+  z-index:1000;
+  }
+  .percent .num
+  {
+  position:absolute;
+  top:4em;
+  left:-5pxpx;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  }
+  .percent .num h2
+  {
+  color:#000000;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+  }
+  .card:hover .percent .num h2
+  {
+  color:#000000;
+  font-size:60px;
+  }
+  .percent .num h2 span
+  {
+  color:#000000;
+  font-size:24px;
+  transition:0.5s;
+  }
+  .card:hover .percent .num h2 span
+  {
+  color:#fff;
+  }
+  .text
+  {
+  position:relative;
+  color:#131111;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+  }
+  .card:hover .text
+  {
+  color:#fff;
+  }
+  svg
+  {
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+  }
+  svg circle
+  {
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#222222;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+  }
+  svg circle:nth-child(2)
+  {
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  }
+  
+  #card1:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: rgb(230, 104, 59);
+  }
+  
+  #card2:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: rgb(230, 104, 59);
+  }
+  
+  #card3:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: rgb(230, 104, 59);
+  }
+  
+  #card4:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: rgb(230, 104, 59);
+  }
+  
+  
+  
+  #bodyskills{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    background: rgb(0, 0, 0);
+  }
+  .h1skill{
+    color: rgb(230, 104, 59);
+    position: relative; 
+    bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    z-index: 3s;
+    text-align: left;
+  }
+  .h3skill{ 
+    margin: 5px;
+  }
+  .skills{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  margin: 60px auto;
+  color: #111010;
+  padding: 20px;
+  height: 16em;
+  width: 50em; 
+  margin-left: 5em; 
+  margin-top: 14em;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .skill li{
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(236, 86, 0)0%, rgba(252,103,103,1)100%);
+  }
+  .html{
+    width: 60%;
+    animation: html 3s;
+  }
+  .css{
+    width: 50%;
+    animation: css 3s;
+  }
+  
+  .cplus{
+    width: 90%;
+    animation: cplus 3s;
+  }
+  
+  .csharp{
+    width: 60%;
+    animation: csharp 3s;
+  }
+  @keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+  }
+  @keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+  }
+  
+  @keyframes cplus {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+  }
+  
+  @keyframes csharp {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+  }
+  #h1skills{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  font-size: 3em;
+  }
+  .parent-container {
+    display: flex;
+  }
+  
+  .containers-wrapper {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    
+  }
+  #secskil {
+    display: flex;
+  }
+  
+  .percentage {
+    position: absolute;
+    right: 9%; 
+    color: white; 
+    z-index: 2; 
+  }
+  #SkillsExperience{
+    height: 900px;
+  }
+  #titlecode{
+    color:  rgb(230, 104, 59);
+    position: relative; 
+    top: 50px;
+    left: 9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    z-index: 3;
+  }
+  
+  .bodycontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url('wallpaperdef.jpg');
+    padding-top: 7%;
+  }
+  .contact{
+    margin-right: 20px;
+  }
+  .bodycontact h6{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .contact form{
+    width: 600px;
+    text-align: center;
+  }
+  
+  form .input-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid  rgb(230, 104, 59);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    margin: 12px 0;
+  }
+  
+  .field .item::placeholder{
+    color: #161616;
+  }
+  
+  form .textarea-field .item{
+    resize: none;
+  }
+  form button {
+    padding:12px 32px;
+    background:  rgb(230, 104, 59);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(22, 22, 22);
+    font-size: 16px;
+    color:#222222;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  form button:hover{
+    box-shadow: none;
+  }
+  
+  .pinkfont{
+    color: rgb(230, 104, 59);
+  }
+  
+  
+  
+  footer {
+    background-color: rgb(230, 104, 59);
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  
